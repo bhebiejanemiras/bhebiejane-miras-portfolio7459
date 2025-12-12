@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Jane Miras</title>
+  <link rel="stylesheet" href="/MY.css/Contact.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/Photos/sunny cap.png" alt="Jane Miras Logo" class="logo-icon">
+        <span>Jane Miras</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/MY.html/Home.html">HOME</a></li>
+        <li><a href="/MY.html/About.html">ABOUT</a></li>
+        <li><a href="/MY.html/services.html">PROJECTS</a></li>
+        <li><a href="/MY.html/Contact.html">CONTACT</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-box">
+      <div class="contact-header">
+        <img src="/Photos/ctct.png" alt="Jane Miras Icon" class="bear-icon">
+        <h2>LET’S GET CONNECTED!</h2>
+      </div>
+
+<form action="mailto:bhebiejanemiras@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+  <div class="form-row">
+    <input type="text" name="first_name" placeholder="First name" required>
+    <input type="text" name="last_name" placeholder="Last name" required>
+  </div>
+  <div class="form-row">
+    <input type="email" name="email" placeholder="Email address" required>
+    <input type="tel" name="phone" placeholder="Phone no.">
+  </div>
+  <textarea name="message" placeholder="Message (question/inquiry)" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
+    </div>  
+
+    <div class="contact-image">
+      <img src="/Photos/me.png" alt="Portrait of Jane Miras">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-icons">
+      <a href="https://www.google.com/maps/place/Juan+Sitoy+St,+Cordova,+Cebu/@10.2479083,123.9449433,17z/data=!3m1!4b1!4m6!3m5!1s0x33a99af40758d549:0x9518878ce02ddc46!8m2!3d10.2479083!4d123.9475182!16s%2Fg%2F11c1gkrk3x?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+        <img src="/Photos/loc.png" alt="Location">
+      </a>
+      <a href="mailto:bhebiejanemiras@gmail.com.com">
+        <img src="/Photos/gm.png" alt="Gmail">
+      </a>
+      <a href="https://www.instagram.com/lovelots.janem/?hl=en" target="_blank">
+        <img src="/Photos/ig.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/patootieeey/" target="_blank">
+        <img src="/Photos/fb.png" alt="Facebook">
+      </a>
+      <a href="https://www.facebook.com/patootieeey/" target="_blank">
+        <img src="/Photos/mes.png" alt="Messenger">
+      </a>
+    </div>
+    <a href="/MY.html/Contact.html" class="back-to-top">BACK TO TOP</a>
+  </footer>
+
+  <script>
+    
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
